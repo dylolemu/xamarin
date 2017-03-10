@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Shooter" x:Class="Shooter.ShooterPage">
+    <AbsoluteLayout>
+		<Image Source = "back.png" WidthRequest="375" HeightRequest = "667" />
+		<Image x:Name = "title" Source = "titlewithoutbutt.png" WidthRequest="440" TranslationX = "-30" />
+	    <Button x:Name = "leftButton" Clicked = "leftButt_Clicked" WidthRequest = "150" HeightRequest = "400"/>
+		<Button x:Name = "rightButton" Clicked = "rightButt" WidthRequest = "150" HeightRequest = "400"/>
+		<Image x:Name = "Ship" Source = "ship.png" WidthRequest="50" TranslationY = "500"/>
+		<Image x:Name = "bullet" Source = "bullet.png" WidthRequest="25" TranslationY = "-500" TranslationX = "50"/>
+		<Image x:Name = "enemyBullet" Source = "enemyBullet.png" WidthRequest="25" TranslationY = "-80"/>
+		<Image x:Name = "enemyBullet2" Source = "enemyBullet.png" WidthRequest="25" TranslationY = "-80"/>
+		<Image x:Name = "enemy" Source = "enemyShip.png" WidthRequest="50" TranslationY = "80"/>
+		<Image x:Name = "enemy2" Source = "enemyShip2.png" WidthRequest="50" TranslationY = "-600"/>
+		<Image x:Name = "enemyDeath" Source = "death.png" WidthRequest="50" TranslationY = "-80"/>
+		<Image x:Name = "enemyDeath2" Source = "death.png" WidthRequest="50" TranslationY = "-80"/>
+		<Image x:Name = "live1b" Source = "liveback.png" WidthRequest="40" TranslationY = "20" TranslationX = "5"/>
+		<Image x:Name = "live2b" Source = "liveback.png" WidthRequest="40" TranslationY = "20" TranslationX = "45"/>
+		<Image x:Name = "live3b" Source = "liveback.png" WidthRequest="40" TranslationY = "20" TranslationX = "85"/>
+		<Image x:Name = "live1" Source = "live.png" WidthRequest="40" TranslationY = "20" TranslationX = "5"/>
+		<Image x:Name = "live2" Source = "live.png" WidthRequest="40" TranslationY = "20" TranslationX = "45"/>
+		<Image x:Name = "live3" Source = "live.png" WidthRequest="40" TranslationY = "20" TranslationX = "85"/>
+		<Button x:Name = "fireButton"
+		   Image = "button.png" Clicked = "fireButt" WidthRequest = "80" HeightRequest = "80" TranslationX = "57" TranslationY = "230">
+			</Button>
+		<Label x:Name = "scoreLabel" TranslationY= "50"/>
+	</AbsoluteLayout>
+</ContentPage>
